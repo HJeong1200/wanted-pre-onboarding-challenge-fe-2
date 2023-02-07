@@ -10,13 +10,17 @@ let Todo;
  * @type {{id: number, content?: string, isDone?: boolean, category?: string, tags?:string[]}}
  *
  */
-let UpdatedTodoBody;
+let UpdatedTodo;
 
 // CREATE
 
 /**
  * @param {string?} content
+ * @param {boolean?} isDone
+ * @param {string?} category
+ * @param {string[]?} tags
  *
+ * @returns {Todo} todo
  */
 function createTodo() {}
 
@@ -27,7 +31,7 @@ function createTodo() {}
  *
  * @returns {Todo} todo
  */
-function getTodo(id) {}
+function getTodo() {}
 
 /**
  * @return {Todo[]} todos
@@ -37,9 +41,10 @@ function getAllTodos() {}
 // UPDATE
 
 /**
- * @param {UpdatedTodoBody} body
+ * @param {number} id
+ * @param {UpdatedTodo} body
  *
- * @returns {Todo[]} todos
+ * @returns {Todo} todo
  */
 function updateTodo() {}
 
@@ -68,7 +73,7 @@ function deleteAllTodos() {}
 
 /**
  * @param {number} id
- * @param {string} tag
+ * @param {number} tagIndex
  *
  * @returns {Todo} todo
  */
